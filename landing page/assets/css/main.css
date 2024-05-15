@@ -1,0 +1,48 @@
+@import './base.css';
+.header{
+    position: sticky;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header .logo img{
+    width: 35px;
+}
+.header .logo a{
+    color: var(--mainColore);
+}
+.header .nav a{
+    color:#101928;
+}
+.nav ul{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.active{
+    font-weight: 900;
+}
+.header .auth a{
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.header .auth a:first-of-type{
+    border: 1px solid var(--mainColore);
+  color: var(--mainColore); 
+}
+.header .auth a:last-of-type {
+    background-color:var(--mainColore) ;
+    color: #fff;
+}
+@media (max-width:992px) {
+   
+   .nav {
+    display: none;
+   }
+   
+}
